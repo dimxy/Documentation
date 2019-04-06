@@ -8,6 +8,8 @@ The `tokens` smart contract requires locking a proportional amount of satoshis o
 
 For example, if you desire to create a one-of-a-kind token, use 1 satoshi in its creation.
 
+There is also a support for non-fungible tokens. Each non-fungible token has the amount of 1 and contains additional array of data about itscorresponding asset. These data has a evalcode inside which binds this non-fungible token to a cc contract responsible for validation. The `tokeninfo` method allows to see if a token is non-fungible. 
+
 ## tokenaddress
 
 **tokenaddress (pubkey)**
@@ -270,6 +272,10 @@ The `tokeninfo` method reveals information about any token.
 | name        | (string) | the name of the token                                         |
 | supply      | (number) | the total supply of the token                                 |
 | description | (string) | the token description provided by the owner at token creation |
+| data        | (string,optional) | the data of non-fungible token, in hex |
+| IsImported | (string,optional) | if 'yes' this token is imported from another chain |
+| sourceChain | (string,optional) | the imported token source chain name |
+| sourceTokenId | (string,optional) | the tokenid of the source token for imported token |
 
 #### :pushpin: Examples:
 
