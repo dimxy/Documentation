@@ -24,7 +24,9 @@ The workflow to buy tokens
 * a token owner who want to sell some amount of tokens for the price proposed in the order runs `tokenfillbid` method. The sold token amount moves from the seller token cc address to the buyer token CC address and at the same time locked coins move from the global cc address to seller's address. Such sells might be repeated while there is a remainder of coins in the bid order.  
 * at any time the order creator can cancel it with `tokencancelbid` method. The coin remainder would return to his address.
 
-The rpc methods descriptions follow futher.
+To list currently active order there are `tokenorders` or `mytokenorders` methods.
+
+The methods detailed descriptions follow further.
 
 ## assetaddress
 
@@ -717,4 +719,10 @@ Response:
 ]
 ```
 
+## mytokenorders
 
+**mytokenorders [evalcode]**
+
+The `mytokenorders` method displays the public on-chain orders created with my pubkey, which is set in -pubkey parameter of komodod. 
+The additional evalcode parameter allows to display orders for non-fungible tokens bound to this evalcode.
+The information returned by `mytokenorders` is the same as for `tokenorders`. 
