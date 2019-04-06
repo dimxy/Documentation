@@ -2,13 +2,18 @@
 
 ## Introduction
 
-The `tokens` Crypto Conditions smart contract enables core-asset support for the on-chain creation of colored coins, also called tokens. The functionality is facilitated by utxo technology. Tokens can be generated on any chain where the [ac_cc](../installations/asset-chain-parameters.html#ac-cc) is enabled.
+The `tokens` Crypto Conditions smart contract enables support for the on-chain creation of colored coins, also called tokens. 
+Usually tokens represent some real-world assets on a blockchain.
+
+The functionality is facilitated by utxo technology. Tokens can be generated on any chain where the [ac_cc](../installations/asset-chain-parameters.html#ac-cc) is enabled.
+
+Each token is identified by its unique token id.
 
 The `tokens` smart contract requires locking a proportional amount of satoshis of the native coins. These satoshis create the supply for the token.
 
 For example, if you desire to create a one-of-a-kind token, use 1 satoshi in its creation.
 
-There is also a support for non-fungible tokens. Each non-fungible token has the amount of 1 and contains additional array of data about itscorresponding asset. These data has a evalcode inside which binds this non-fungible token to a cc contract responsible for validation. The `tokeninfo` method allows to see if a token is non-fungible. 
+There is also a support for non-fungible tokens. Each non-fungible token has the amount of 1 and contains additional array of data describing its corresponding asset. These data has a evalcode inside which binds this non-fungible token to a cc contract responsible for validation. The `tokeninfo` method outputs data for non-fungible tokens. 
 
 ## tokenaddress
 
