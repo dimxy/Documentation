@@ -47,7 +47,6 @@ The `tokenaddress` method returns information about a token address according to
 | result          | (string) | whether the command executed successfully                                                                                        |
 | AssetsCCaddress | (string) | taking the token contract's EVAL code as a modifier, this is the public address that corresponds to the token contract's privkey |
 | Assetsmarker    | (string) | the unmodified public address generated from the token contract's privkey                                                        |
-| CCaddress       | (string) | taking the token contract's EVAL code as a modifier, this is the CC address from the pubkey of the user                          |
 | myCCaddress     | (string) | taking the token contract's EVAL code as a modifier, this is the CC address from the pubkey of the user                          |
 | myaddress       | (string) | the public address of the pubkey used to launch the chain                                                                        |
 
@@ -66,7 +65,6 @@ Response:
   "result": "success",
   "AssetsCCaddress": "RGKRjeTBw4LYFotSDLT6RWzMHbhXri6BG6",
   "Assetsmarker": "RFYE2yL3KknWdHK6uNhvWacYsCUtwzjY3u",
-  "CCaddress": "RG6mr23tQ9nUhmi5GEnYqjfkqZt9x2MRXz",
   "myCCaddress": "RG6mr23tQ9nUhmi5GEnYqjfkqZt9x2MRXz",
   "myaddress": "RDjG4sM1y4udiJSszF6BLotqUnZX79Rom9"
 }
