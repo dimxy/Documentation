@@ -34,9 +34,9 @@ The `tokenaddress` method returns information about a token address according to
 | Structure       | Type     | Description                                                                                                                      |
 | --------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | result          | (string) | whether the command executed successfully                                                                                        |
-| TokensCCaddress | (string) | taking the token contract's EVAL code as a modifier, this is the public address that corresponds to the token contract's privkey also known as tokens global address |                       |
-| myCCaddress     | (string) | taking the token contract's EVAL code as a modifier, this is the CC address for the pubkey parameter                          |
-| myaddress       | (string) | the normal address for the pubkey parameter                                                                        |
+| TokensCCaddress | (string) | taking the token contract's EVAL code as a modifier, this is the public CC address that corresponds to the token contract's privkey, also known as Tokens CC global address |                       |
+| myCCaddress     | (string) | taking the token contract's EVAL code as a modifier, this is the token CC address for the pubkey parameter |
+| myaddress       | (string) | the normal address for the pubkey parameter  |
 
 #### :pushpin: Examples:
 
