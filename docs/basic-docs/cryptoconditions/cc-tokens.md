@@ -32,9 +32,7 @@ The `tokenaddress` method returns information about a token address according to
 | Structure       | Type     | Description                                                                                                                      |
 | --------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | result          | (string) | whether the command executed successfully                                                                                        |
-| AssetsCCaddress | (string) | taking the token contract's EVAL code as a modifier, this is the public address that corresponds to the token contract's privkey |
-| Assetsmarker    | (string) | the unmodified public address generated from the token contract's privkey                                                        |
-| CCaddress       | (string) | taking the token contract's EVAL code as a modifier, this is the CC address from the pubkey of the user                          |
+| TokensCCaddress | (string) | taking the token contract's EVAL code as a modifier, this is the public address that corresponds to the token contract's privkey also known as tokens global address |                       |
 | myCCaddress     | (string) | taking the token contract's EVAL code as a modifier, this is the CC address from the pubkey of the user                          |
 | myaddress       | (string) | the public address of the pubkey used to launch the chain                                                                        |
 
@@ -51,9 +49,7 @@ Response:
 ```json
 {
   "result": "success",
-  "AssetsCCaddress": "RGKRjeTBw4LYFotSDLT6RWzMHbhXri6BG6",
-  "Assetsmarker": "RFYE2yL3KknWdHK6uNhvWacYsCUtwzjY3u",
-  "CCaddress": "RG6mr23tQ9nUhmi5GEnYqjfkqZt9x2MRXz",
+  "TokensCCaddress": "RGKRjeTBw4LYFotSDLT6RWzMHbhXri6BG6",
   "myCCaddress": "RG6mr23tQ9nUhmi5GEnYqjfkqZt9x2MRXz",
   "myaddress": "RDjG4sM1y4udiJSszF6BLotqUnZX79Rom9"
 }
