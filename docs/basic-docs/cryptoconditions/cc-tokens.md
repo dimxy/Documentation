@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The `tokens` Crypto Conditions smart contract enables support for the on-chain creation of colored coins, also called tokens. 
+The `tokens` Custom Consensus contract enables support for the on-chain creation of colored coins, also called tokens. 
 Usually tokens represent some real-world assets on a blockchain.
 
 The functionality is facilitated by utxo technology. Tokens can be generated on any chain where the [ac_cc](../installations/asset-chain-parameters.html#ac-cc) is enabled.
@@ -14,6 +14,8 @@ The `tokens` smart contract requires locking a proportional amount of satoshis o
 For example, if you desire to create a one-of-a-kind token, use 1 satoshi in its creation.
 
 There is also a support for non-fungible tokens. Each non-fungible token has the amount of 1 and contains additional array of data describing its corresponding asset. These data has a evalcode inside which binds this non-fungible token to a cc contract responsible for validation. The `tokeninfo` method outputs data for non-fungible tokens. 
+
+This Tokens CC contract enables basic tokens functions like creation, transferring and balance validation. Created tokens are usually used together with some other contract which supports operations with tokens, like Assets CC contract which provides token buy/sell operations.
 
 ## tokenaddress
 
@@ -49,7 +51,7 @@ Response:
 ```json
 {
   "result": "success",
-  "TokensCCaddress": "RGKRjeTBw4LYFotSDLT6RWzMHbhXri6BG6",
+  "TokensCCaddress": "RAMvUfoyURBRxAdVeTMHxn3giJZCFWeha2",
   "myCCaddress": "RG6mr23tQ9nUhmi5GEnYqjfkqZt9x2MRXz",
   "myaddress": "RDjG4sM1y4udiJSszF6BLotqUnZX79Rom9"
 }
